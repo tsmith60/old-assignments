@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.awt.*;
+
+public class Midterms {
+  public static void main (String [] args)  
+    throws FileNotFoundException{
+   
+    Scanner input = new Scanner(new File("midterm.txt"));
+    
+    int [] score = new int [20];
+    int [] count = new int [20];
+    String [] name = new String [20];
+    
+    for (int i = 0; i < 19; i++){
+      count [i] = input.nextInt();
+      name [i] = input.next();
+      score [i] = input.nextInt();
+      System.out.print(" " + count[i] + " " + name[i]+ " ");
+      System.out.print(score[i]);
+    } 
+  }
+  
+}

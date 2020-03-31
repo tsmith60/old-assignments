@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+
+public class BankAccountMain {
+  public static void main (String [] args){
+    
+    Scanner input = new Scanner(new File("account.txt"));
+    int [] hi = int [10];
+    String [] na = String [10];
+    
+    for (int i = 0; i < 10; i++){
+      
+    na[i] = input.next();
+    hi[i] = input.nextInt();
+    
+    }
+        
+    BankAccount bA = new BankAccount();
+    
+    
+  }
+}

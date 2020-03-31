@@ -1,0 +1,10 @@
+public class TestStudents{
+  public static void main (String [] args){
+    
+    
+    
+    UndergraduateStudent ted = new Student("ted",18);
+    
+    
+  }
+}

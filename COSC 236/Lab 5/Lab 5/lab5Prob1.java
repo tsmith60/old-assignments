@@ -1,0 +1,57 @@
+// Ted Smith III   Cosc 236 Section 003
+//  Lab 5 Problem 1 and 2
+import java.util.*;
+
+public class lab5Prob1{
+  public static void main (String[] args){
+    
+    
+    
+    int[] value1 = {5}; // Number 1
+    int[] value2 = {3,12};
+    int[] value3 = {4,2,10,8};
+    int[] value4 = {1,9,3,5,7};
+    int[] value5 = {8,2,10,4,10,9};
+    
+    mystery1(value1);
+    mystery1(value2);
+    mystery1(value3);
+    mystery1(value4);
+    mystery1(value5);
+    System.out.println();
+    System.out.println();
+    
+    int[] myst2value1 = {8}; // Number 2
+    int[] myst2value2 = {14,7};
+    int[] myst2value3 = {7,1,3,2,0,4};
+    int[] myst2value4 = {10,8,9,5,6};
+    int[] myst2value5 = {8,10,8,6,4,2};
+    
+    mystery2(myst2value1);
+    mystery2(myst2value2);
+    mystery2(myst2value3);
+    mystery2(myst2value4);
+    mystery2(myst2value5);
+  }
+  public static int mystery1(int[] list) {
+    int x = 0;
+    for (int i = 1; i < list.length; i++) {
+        int y = list[i] - list[0];
+        if (y > x) {
+            x = y;
+        }
+    }
+    System.out.println(x);
+    return x;
+}
+  public static int mystery2(int[] list) {
+    int x = 0;
+    for (int i = 0; i < list.length - 1; i++) {
+        if (list[i] > list[i + 1]) {
+            x++;
+        }
+    }
+    System.out.println(x);
+    return x;
+}
+}

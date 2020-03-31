@@ -1,0 +1,9 @@
+public class BankAccount {
+  String name;
+  int balance;
+  
+  public BankAccount(String name1, int balance1){
+    
+  }
+  
+}

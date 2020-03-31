@@ -1,0 +1,32 @@
+import java.awt.*;
+
+public class TestRectangle {
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle(5, 4, 10, 17);
+        Rectangle r2 = new Rectangle(10, 10, 20, 3);
+        Rectangle r3 = new Rectangle(0, 1, 12, 15);
+        Rectangle r4 = new Rectangle(10, 10, 20, 3);
+        
+        System.out.println("r1 = " + r1);
+        System.out.println("r2 = " + r2);
+        System.out.println("r3 = " + r3);
+        
+        System.out.println("r2 equals r1? " + r2.equals(r1));
+        System.out.println("r2 equals r2? " + r2.equals(r2));
+        System.out.println("r2 equals r3? " + r2.equals(r3));
+        System.out.println("r2 equals r4? " + r2.equals(r4));
+
+        System.out.println("r1 contains (6, 8)? = " + r1.contains(6, 8));
+        System.out.println("r2 contains (6, 8)? = " + r2.contains(6, 8));
+        System.out.println("r3 contains (6, 8)? = " + r3.contains(6, 8));
+        System.out.println("r2 contains (30, 13)? = " + r2.contains(30, 13));
+
+        r1.intersect(r3);
+        r2.intersect(r4);
+        System.out.println("r1 intersect r3 = " + r1);
+        System.out.println("r2 intersect r4 = " + r2);
+
+        r1.intersect(r2);
+        System.out.println("r1 intersect r2 = " + r1);
+    }
+}

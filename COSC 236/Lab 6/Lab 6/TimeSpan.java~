@@ -1,0 +1,27 @@
+public class TimeSpan{
+  int hours;
+  int minutes;
+  int timespan = hours + (minutes/60) + (minutes%60);
+  public TimeSpan (int hours1, int minutes1){
+    
+    hours = hours1;
+    minutes = minutes1;
+    
+    
+  }
+  
+  public int add( int hours2, int minutes2){
+     int minutestotal = (minutes2/60) + (minutes2%60);
+    
+   hours += hours2;
+   minutes += minutestotal;
+    return timespan;
+  }
+  public int add(int timespan1){
+    timespan += timespan1;
+    return timespan;
+}
+  public String toString(){
+    return hour "hours" + "min";
+  }
+}

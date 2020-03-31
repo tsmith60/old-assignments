@@ -1,0 +1,53 @@
+// Ted Smith III   Cosc 236 Section 003
+//  Lab 5 Problem 6
+
+
+import java.util.*;
+
+public class vowelCount{
+  public static void main (String[] args){
+   
+    System.out.println(Arrays.toString(vowelCount("black banana republic boots")));
+  }
+  public static int[] vowelCount( String list){
+    String[] jump= new String[list.length()];
+    for (int k = 0; k < list.length(); k++){
+      
+      jump[k] = list.substring(k,k+1);
+    }
+    
+    int i = 0;
+    int counta = 0;
+    int counte = 0;
+    int counti = 0;
+    int counto = 0;
+    int countu = 0;
+    
+    while (i < jump.length) {
+      
+      if (jump[i].equals("a" )){
+        counta++;
+      }
+      if (jump[i].equals("e")){
+        
+      counte++;
+      }
+      if (jump[i].equals("i")){
+        counti++;
+      }
+      if (jump[i].equals("o")){
+        counto++;
+      }
+      if (jump[i].equals("u")){
+        countu++;
+      }
+      else{
+      }
+      i++;
+    }
+    int [] test = {counta,counte, counti,counto,countu};
+    return test;
+  }
+  
+// Problem 6 for Lab 5
+}
